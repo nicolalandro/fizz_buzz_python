@@ -7,4 +7,4 @@ install:
   - pip install -r requirements.txt
 
 script:
-  - python -m unittest discover -s test --pattern=*.py 1>&2
+  - cd test; python -m unittest discover --pattern=*.py 1>&2

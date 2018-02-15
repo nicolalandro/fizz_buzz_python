@@ -4,7 +4,7 @@ import unittest
 
 class MyTestCase(unittest.TestCase):
     def test_main(self):
-        output = subprocess.check_output(['python', '../src/main.py'])
+        output = subprocess.check_output(['python', 'src/main.py'])
         self.assertEqual("b'ciao\\n'", str(output))
 
 

@@ -10,12 +10,12 @@ class NumberTestCase(unittest.TestCase):
 
     def test_is_divisible_for(self):
         number = Number(5)
-        divisible = number.is_disible_for(Number(5))
+        divisible = number.is_divisible_for(Number(5))
         self.assertTrue(divisible)
 
     def test_is_not_divisible_for(self):
         number = Number(5)
-        divisible = number.is_disible_for(Number(2))
+        divisible = number.is_divisible_for(Number(2))
         self.assertFalse(divisible)
 
 

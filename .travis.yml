@@ -4,11 +4,11 @@ python:
 
 install:
   - pip install .
+  - pip install -r requirements.txt
   - pip install codecov
 
 script:
-#  - coverage run test/main_test.py
-  - coverage run test/number_test.py
+  - pytest --cov=./src
   - coverage report -m
 
 after_success:
